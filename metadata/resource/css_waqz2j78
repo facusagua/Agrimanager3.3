@@ -1,0 +1,15 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css_waqz2j78",
+        "id": "FontAwesome",
+        "url": "resources/css/font-awesome.min.css"
+    },
+    "name": "css",
+    "designerId": "03c85f1a-7ccd-4ffd-8c47-b2111591e713"
+}

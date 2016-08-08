@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "depositosgrid",
+        "designer|userClassName": "establecimientosGridViewModel10"
+    },
+    "name": "establecimientosGridViewModel10",
+    "designerId": "3e525bff-9652-46b2-bf17-bb575197627f"
+}

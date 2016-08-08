@@ -1,0 +1,171 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userAlias": "actividadeslotesGrid",
+        "designer|userClassName": "actividadeslotesGrid",
+        "height": 250,
+        "id": "actividadeslotesGrid",
+        "itemId": "actividadesGrid",
+        "layout": "vbox",
+        "scrollable": "true",
+        "width": 400
+    },
+    "name": "actividadesGrid1",
+    "designerId": "1c99556c-97eb-4b9f-8903-1f0e9756ef93",
+    "viewControllerInstanceId": "6912a0f4-eed9-412d-b970-e8b59250e084",
+    "viewModelInstanceId": "6152a180-c5ad-4c40-a198-e92add6bdafe",
+    "cn": [
+        {
+            "type": "Ext.form.field.ComboBox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "displayField": "nombre",
+                "dock": "top",
+                "editable": false,
+                "emptyText": "Seleccione Establecimiento",
+                "fieldLabel": "",
+                "height": 60,
+                "id": "establecimientosCbo",
+                "itemId": "establecimientosCbo",
+                "labelWidth": 130,
+                "layout|flex": 0,
+                "padding": null,
+                "queryMode": "local",
+                "store": "Establecimientos",
+                "style": [
+                    "padding: 5px 5px 5px 5px;"
+                ],
+                "valueField": "codigo"
+            },
+            "name": "MyComboBox",
+            "designerId": "fa711ddd-b7f3-4c88-8f3f-b2c7a31c7c9b"
+        },
+        {
+            "type": "Ext.form.field.ComboBox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoadOnValue": true,
+                "disabled": true,
+                "displayField": "nombre",
+                "editable": false,
+                "emptyText": "Seleccione Lote",
+                "fieldLabel": "",
+                "height": 60,
+                "id": "lotesCbo",
+                "itemId": "lotesCbo",
+                "labelWidth": 130,
+                "layout|flex": 0,
+                "padding": null,
+                "queryMode": "local",
+                "store": null,
+                "style": [
+                    "padding: 5px 5px 5px 5px;"
+                ],
+                "valueField": "codigo"
+            },
+            "name": "MyComboBox2",
+            "designerId": "9b078963-01d5-455c-97a6-d11eb498d90a"
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "bodyStyle": [
+                    "color: #424242;"
+                ],
+                "bufferedRenderer": false,
+                "dock": "top",
+                "forceFit": true,
+                "glyph": "xf196@FontAwesome",
+                "iconAlign": "left",
+                "iconCls": null,
+                "itemId": "actividadesGrid",
+                "rtl": false,
+                "scrollDelta": null,
+                "scrollable": "true",
+                "split": true,
+                "store": "Lotes_actividades",
+                "style": [
+                    "padding: 5px 5px 5px 5px;",
+                    "color: #424242;"
+                ],
+                "title": "Actividades Lotes",
+                "titleAlign": "left"
+            },
+            "name": "MyGridPanel",
+            "designerId": "441607f0-8b4d-4c5c-aacc-fd2aca14ed6a",
+            "cn": [
+                {
+                    "type": "Ext.view.Table",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": 0,
+                        "preserveScrollOnRefresh": true
+                    },
+                    "name": "MyTable",
+                    "designerId": "feae91eb-6ddc-482d-b547-160ed4969c1e"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "nombre",
+                        "id": "Actividades",
+                        "itemId": "Actividades",
+                        "scrollable": "true",
+                        "text": "Actividades"
+                    },
+                    "name": "MyColumn",
+                    "designerId": "29983c90-8dc6-4dac-8963-a605ccf07fd1"
+                }
+            ]
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "glyph": "xf234@FontAwesome",
+                "hidden": true,
+                "iconAlign": "top",
+                "id": "cargalaborBtn",
+                "itemId": "cargalaborBtn",
+                "layout|flex": 0,
+                "margin": "50px",
+                "text": "Cargar Labor"
+            },
+            "name": "MyButton",
+            "designerId": "c0c76def-16e5-4c54-8b4c-e99abf22be09"
+        }
+    ]
+}

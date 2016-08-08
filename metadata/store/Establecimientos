@@ -1,0 +1,28 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "designer|userClassName": "Establecimientos",
+        "model": "Establecimientos",
+        "storeId": "Establecimientos"
+    },
+    "name": "Depositos1",
+    "designerId": "45b5f2a5-e6d2-4a2e-b6d8-e87a11dcb28d",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "bdd60388-91dc-496d-bbbd-8db7c31485e9"
+        }
+    ]
+}

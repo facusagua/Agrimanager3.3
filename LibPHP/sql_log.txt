@@ -1,0 +1,21 @@
+
+2016-07-05 13:24:58 - Conjunto de caracteres actual: %s
+
+2016-07-05 13:24:58 - Error cargando el conjunto de caracteres utf8: %s
+ 
+2016-07-05 13:24:58 - Conjunto de caracteres actual: %s
+
+2016-07-05 13:24:58 - Error cargando el conjunto de caracteres utf8: %s
+ 
+2016-07-05 13:26:22 - Conjunto de caracteres actual: %s
+
+2016-07-05 13:26:22 - Error cargando el conjunto de caracteres utf8: %s
+ 
+2016-07-05 13:26:22 - Conjunto de caracteres actual: %s
+
+2016-07-05 13:26:22 - Error cargando el conjunto de caracteres utf8: %s
+ 
+2016-07-05 13:39:28 - Conjunto de caracteres actual: %s
+
+2016-07-05 13:39:28 - Error cargando el conjunto de caracteres utf8: %s
+ 

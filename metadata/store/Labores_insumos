@@ -1,0 +1,29 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "Labores_insumos",
+        "model": "Labores_insumos",
+        "storeId": "Labores_insumos"
+    },
+    "name": "Insumos1",
+    "designerId": "2dbb1cb9-ab01-45a5-a694-abffe440caa5",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "4f0f30cf-2bd8-46e8-a599-fd339a0a4ca5"
+        }
+    ]
+}

@@ -1,0 +1,132 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Labores_insumos"
+    },
+    "name": "MyModel1",
+    "designerId": "ffac5feb-613f-4b03-9640-f51f0ac0ed9b",
+    "cn": [
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "estado_registro"
+            },
+            "name": "MyString9",
+            "designerId": "d8795f90-055c-400c-a698-d62e2e1e27a1"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyInteger16",
+            "designerId": "3590a30e-dc18-4103-877a-650a8352a96d"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id_labores"
+            },
+            "name": "MyInteger17",
+            "designerId": "2effcdd7-3962-4d39-b001-3cd755302839"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "uid"
+            },
+            "name": "MyInteger18",
+            "designerId": "632ce425-9f95-411b-b803-7197e453868e"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "cod_insumo"
+            },
+            "name": "MyInteger19",
+            "designerId": "bd185384-818a-467b-98c7-891260221c93"
+        },
+        {
+            "type": "Ext.data.field.Number",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "dosis"
+            },
+            "name": "MyNumber1",
+            "designerId": "b566872c-0bc9-4732-abef-39c8b6f79572"
+        },
+        {
+            "type": "Ext.data.field.Number",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "cantidad"
+            },
+            "name": "MyNumber4",
+            "designerId": "be929fac-6e1f-4545-b788-5aaddd447c1a"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "cod_deposito"
+            },
+            "name": "MyInteger20",
+            "designerId": "41be2f96-953d-4c9c-b138-b8d08c7442f1"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "tipo"
+            },
+            "name": "MyString10",
+            "designerId": "a4f1ad7f-cebb-47eb-a99b-c2a09b616568"
+        }
+    ]
+}

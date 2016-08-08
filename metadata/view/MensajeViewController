@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mensaje",
+        "designer|userClassName": "MensajeViewController"
+    },
+    "designerId": "001e3c0f-8e9e-473a-92b5-c25be239b267"
+}

@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "laboresform",
+        "designer|userClassName": "establecimientosGridViewModel14"
+    },
+    "name": "establecimientosGridViewModel14",
+    "designerId": "d26721d5-f3c2-4f11-ad07-fdb3e384063e"
+}

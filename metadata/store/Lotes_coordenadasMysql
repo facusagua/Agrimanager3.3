@@ -1,0 +1,55 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Lotes_coordenadasMysql",
+        "model": "Lotes_coordenadas",
+        "storeId": "Lotes_coordenadasMysql"
+    },
+    "name": "EstablecimientosMysql1",
+    "designerId": "ff2be47d-9183-4865-8a0b-3c19d80976e3",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{sql: 'SELECT lotes_coordenadas.id,id_lote,codigo as cod_lote,cod_establecimiento,latitud,longitud,orden FROM lotes_coordenadas,lotes where lotes_coordenadas.id_lote= lotes.id'}"
+                ],
+                "url": "php/listado.php"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "bcc4f2f1-70c7-447b-8439-426613ce2bd4",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": [
+                            "reqList"
+                        ]
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "fc20201d-b8af-4baf-a869-2f9ef345c14a"
+                }
+            ]
+        }
+    ]
+}

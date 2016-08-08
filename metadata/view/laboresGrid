@@ -1,0 +1,204 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userAlias": "laboresgrid",
+        "designer|userClassName": "laboresGrid",
+        "height": 250,
+        "id": "laboresGrid",
+        "itemId": "laboresGrid",
+        "layout": "vbox",
+        "scrollable": "true",
+        "width": 400
+    },
+    "name": "actividadeslotesGrid1",
+    "designerId": "e8e8a3c3-1141-49f3-ad64-7e0e22c12a53",
+    "viewControllerInstanceId": "7231259b-4b3e-45aa-9224-12240f714eab",
+    "viewModelInstanceId": "210d9d33-308a-426a-9183-ff61a1de444b",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "bodyStyle": [
+                    "color: #424242;"
+                ],
+                "bufferedRenderer": false,
+                "componentCls": null,
+                "dock": "top",
+                "forceFit": true,
+                "glyph": "xf196@FontAwesome",
+                "iconAlign": "left",
+                "id": "laboresListGrid",
+                "itemId": "laboresListGrid",
+                "layout|flex": 0,
+                "rtl": false,
+                "scrollDelta": null,
+                "scrollable": "true",
+                "split": true,
+                "store": "Labores",
+                "style": [
+                    "padding: 5px 5px 5px 5px;",
+                    "color: #424242;"
+                ],
+                "title": "Labores",
+                "titleAlign": "left"
+            },
+            "name": "MyGridPanel",
+            "designerId": "be1561e8-3b67-4856-a6cd-041579a6e6d3",
+            "cn": [
+                {
+                    "type": "Ext.view.Table",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": 0,
+                        "preserveScrollOnRefresh": true
+                    },
+                    "name": "MyTable",
+                    "designerId": "76184428-e84f-456c-a4b1-9b375db0d8bc"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "fecha",
+                        "format": null,
+                        "text": "Fecha"
+                    },
+                    "name": "MyDateColumn",
+                    "designerId": "42a1f775-d9df-45c6-8119-2dfc163c0c82"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "cod_tarea",
+                        "format": "00",
+                        "text": "Cod Tarea"
+                    },
+                    "name": "MyNumberColumn",
+                    "designerId": "321ac34a-6dab-478c-b1ba-8f8f45cc05a3",
+                    "cn": [
+                        {
+                            "type": "basicfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "record",
+                                    "rowIndex"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "var store = Ext.getStore('Tareas');",
+                                    "                                                        console.log(value);",
+                                    "                                                        var num = store.find('codigo',value);",
+                                    "                                                        if (num==-1) {return '...';}",
+                                    "                                                        else { return store.getAt(num).get('descripcion');}"
+                                ]
+                            },
+                            "name": "renderer",
+                            "designerId": "f666efe5-35b1-4c94-af31-19386961a53a"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "glyph": "xf234@FontAwesome",
+                "iconAlign": "top",
+                "id": "agregalaborBtn",
+                "itemId": "agregalaborBtn",
+                "layout|flex": 0,
+                "margin": "30px",
+                "params": [
+                    "laboresForm"
+                ],
+                "text": "Agregar Labores"
+            },
+            "name": "MyButton1",
+            "designerId": "009aa1d4-dd08-496d-bcc3-04da213e7532",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onAgregalaborBtnClick",
+                        "implHandler": [
+                            "var grid_panel = Ext.ComponentQuery.query('#laboresGrid')[0];",
+                            "f_crud.form_open(grid_panel,'ADD');"
+                        ],
+                        "name": "click",
+                        "scope": "me"
+                    },
+                    "name": "onAgregalaborBtnClick",
+                    "designerId": "74e2cd24-c519-4692-86e5-c334d77dd584"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLaboresGridAfterRender",
+                "implHandler": [
+                    "        debugger;",
+                    "        console.log(this);",
+                    "        this.store_name = 'Labores';",
+                    "        this.model_name = 'MyApp.model.Labores';",
+                    "        this.form_name  = 'MyApp.view.laboresForm';",
+                    "        var store \t\t  = Ext.getStore(this.store_name);",
+                    "        var st_insumos    = Ext.getStore('Labores_insumos');",
+                    "        var st_personal   = Ext.getStore('Labores_personal');",
+                    "        var st_maquinaria = Ext.getStore('Labores_maquinaria');",
+                    "        this.form_store_array = [store,st_insumos,st_personal,st_maquinaria];"
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "name": "onLaboresGridAfterRender",
+            "designerId": "1cf21f9e-8996-4580-a24b-b93bb42b3b34"
+        }
+    ]
+}

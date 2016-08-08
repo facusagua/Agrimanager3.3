@@ -1,0 +1,129 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "comboxActions"
+    },
+    "name": "MyController1",
+    "designerId": "00b13478-44eb-4266-a11a-9c46b2048ae4",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "application"
+                ],
+                "fn": "init",
+                "implHandler": [
+                    "this.control({",
+                    "    'combobox#establecimientosCbo': {",
+                    "        select: 'onEstablecimientosSelect'",
+                    "    },",
+                    "    'combobox#lotesCbo': {",
+                    "        select: 'onLotesSelect'",
+                    "    },",
+                    "    'combobox#cod_tarea': {",
+                    "        select: 'ontareaLaboresSelect'",
+                    "    }",
+                    "});"
+                ]
+            },
+            "name": "init",
+            "designerId": "bff42350-a5bf-40c9-bee8-4927d398cb72"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "combo",
+                    "record",
+                    "eOpts"
+                ],
+                "fn": "onEstablecimientosSelect",
+                "implHandler": [
+                    "debugger;",
+                    "var lotesCbo = Ext.ComponentQuery.query('#lotesCbo')[0];",
+                    "lotesCbo.enable();",
+                    "lotesCbo.clearValue();",
+                    "f_crud.load_store(\"Lotes\");",
+                    "var lotesactStore = Ext.getStore(\"Lotes\");",
+                    "console.log(lotesactStore);",
+                    "var codigo = record.data.codigo;",
+                    "lotesactStore.filter('cod_establecimiento',codigo);",
+                    "lotesCbo.bindStore(lotesactStore);",
+                    "lotesCbo.displayField = 'nombre';",
+                    "lotesCbo.valueField = 'codigo';"
+                ]
+            },
+            "name": "onEstablecimientosSelect",
+            "designerId": "608ba0dd-0b48-4b22-a5c3-6944ff8fae7e"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "combo",
+                    "record",
+                    "eOpts"
+                ],
+                "fn": "onLotesSelect",
+                "implHandler": [
+                    "var actLotesGrid = Ext.ComponentQuery.query('#actividadesGrid')[0];",
+                    "var establecimientoCbo = Ext.ComponentQuery.query('#establecimientosCbo')[0];",
+                    "actLotesGrid.enable();",
+                    "f_crud.load_store(\"Lotes_actividades\");",
+                    "var actLotesStore = Ext.getStore(\"Lotes_actividades\");",
+                    "var cod_lote = record.data.codigo;",
+                    "var cod_est  = establecimientoCbo.value;",
+                    "actLotesStore.filter('cod_lote',cod_lote);",
+                    "actLotesStore.filter('cod_establecimiento',cod_est);",
+                    "console.log(actLotesStore);",
+                    "actLotesGrid.bindStore(actLotesStore);"
+                ]
+            },
+            "name": "onLotesSelect",
+            "designerId": "bb09621b-2666-4151-91e2-697f7859ce2e"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "combo",
+                    "record",
+                    "eOpts"
+                ],
+                "fn": "ontareaLaboresSelect",
+                "implHandler": [
+                    "var labBtn = Ext.ComponentQuery.query('#aceptarLaboresbtn')[0];",
+                    "labBtn.enable();"
+                ]
+            },
+            "name": "ontareaLaboresSelect",
+            "designerId": "0e1e24c4-f15e-41be-9e6d-3200872c8174"
+        }
+    ]
+}

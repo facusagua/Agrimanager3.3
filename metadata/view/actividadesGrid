@@ -1,0 +1,96 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "actividadesgrid",
+        "designer|userClassName": "actividadesGrid",
+        "height": 250,
+        "id": "actividadesGrid",
+        "itemId": "actividadesGrid",
+        "layout": "card",
+        "width": 400
+    },
+    "name": "establecimientosGrid1",
+    "designerId": "da1313c9-2904-4962-b892-679691d209d6",
+    "viewControllerInstanceId": "8f4e9c8a-d4d3-4e12-a26f-737accd7c053",
+    "viewModelInstanceId": "30aa19b8-67a0-4145-a590-d5dcaa55ba3e",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "bodyStyle": [
+                    "color: #424242;"
+                ],
+                "bufferedRenderer": false,
+                "dock": "top",
+                "forceFit": true,
+                "glyph": "xf06c@FontAwesome",
+                "iconAlign": "left",
+                "itemId": "actividadesGrid",
+                "rtl": false,
+                "store": "Actividades",
+                "style": [
+                    "padding: 5px 5px 5px 5px;",
+                    "color: #424242;"
+                ],
+                "title": "Actividades",
+                "titleAlign": "left"
+            },
+            "name": "MyGridPanel",
+            "designerId": "8602e8ae-40bd-49fe-96ab-ebc12ef8410f",
+            "cn": [
+                {
+                    "type": "Ext.view.Table",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyTable",
+                    "designerId": "c0eda287-a06c-4334-93ef-0dd0161c1be0"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "codigo",
+                        "format": "00",
+                        "text": "Codigo",
+                        "width": "20%"
+                    },
+                    "name": "MyNumberColumn2",
+                    "designerId": "7f37f9d9-2ff5-4fe6-91bc-1498bd03c847"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "nombre",
+                        "text": "Nombre",
+                        "width": "80%"
+                    },
+                    "name": "MyColumn2",
+                    "designerId": "c8d22bf1-926a-42a9-9878-8f2bac27c7d5"
+                }
+            ]
+        }
+    ]
+}

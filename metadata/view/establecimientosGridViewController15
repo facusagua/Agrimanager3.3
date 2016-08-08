@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "configpanel",
+        "designer|userClassName": "establecimientosGridViewController15"
+    },
+    "name": "establecimientosGridViewController15",
+    "designerId": "034266f2-5bf3-491c-b206-52725040a105"
+}

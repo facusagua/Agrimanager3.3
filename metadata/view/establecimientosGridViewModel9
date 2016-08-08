@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "contratistasgrid",
+        "designer|userClassName": "establecimientosGridViewModel9"
+    },
+    "name": "establecimientosGridViewModel9",
+    "designerId": "65d0a980-23b6-4669-b8c9-e131963bd301"
+}

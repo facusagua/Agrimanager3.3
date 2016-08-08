@@ -1,0 +1,34 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "asynchronousLoad": false,
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "Campanias",
+        "model": "Campanias",
+        "sortOnLoad": false,
+        "storeId": "Campanias"
+    },
+    "name": "Actividades1",
+    "designerId": "85f42027-9194-4eb8-a8ad-472a9e0ad966",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": null
+            },
+            "name": "MyLocalStorageProxy",
+            "designerId": "02efb44d-2b9c-48b8-97b0-91ce2ea6428a"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Registros_borrados"
+    },
+    "name": "MyModel",
+    "designerId": "cd3170e9-fe09-419e-a7cb-3dacd8b18982",
+    "cn": [
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyInteger26",
+            "designerId": "18e2108d-ca49-4210-a3e7-dbb38e863cd2"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id_registro"
+            },
+            "name": "MyInteger27",
+            "designerId": "06f63df2-9cdc-4870-833a-f81bfa52f97b"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "tabla"
+            },
+            "name": "MyString12",
+            "designerId": "6100e161-0738-433c-8699-be7efb044fd3"
+        }
+    ]
+}

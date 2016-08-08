@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "insumosgrid",
+        "designer|userClassName": "establecimientosGridViewController7"
+    },
+    "name": "establecimientosGridViewController7",
+    "designerId": "6fb40213-f4a5-4b75-a14a-7de15e70a004"
+}

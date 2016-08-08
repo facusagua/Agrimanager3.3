@@ -1,0 +1,153 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "center",
+        "designer|userAlias": "menuprincipal",
+        "designer|userClassName": "menuPrincipal",
+        "dock": "top",
+        "height": 504,
+        "itemId": "menuTablas",
+        "layout": "vbox",
+        "scrollable": "true",
+        "style": [
+            "background-color: #D8D8D8;",
+            ""
+        ]
+    },
+    "name": "menuTablas1",
+    "designerId": "ea38bc0a-10a5-474f-add1-1f7e836b8fdd",
+    "viewControllerInstanceId": "d83b62bc-1f04-4dd7-abd3-4e8adeff0ed5",
+    "viewModelInstanceId": "b78f54bd-44d1-4428-859d-301e3aa535a8",
+    "cn": [
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf043@FontAwesome",
+                "height": 90,
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "margin": "10px 0px 10px 0px",
+                "scale": "medium",
+                "style": [
+                    "margin: 2px 10px 2px 10px;",
+                    "background-color: #424242;"
+                ],
+                "text": "Alta de Insumos",
+                "width": "80%"
+            },
+            "name": "MyButton3",
+            "designerId": "4c07b50b-6a92-4813-8f7e-c2d69565904e"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf0d1@FontAwesome",
+                "height": 90,
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "margin": "10px 0px 10px 0px",
+                "scale": "medium",
+                "style": [
+                    "margin: 2px 10px 2px 10px;",
+                    "background-color: #424242;"
+                ],
+                "text": "Produccion",
+                "width": "80%"
+            },
+            "name": "MyButton4",
+            "designerId": "ca9f09e7-5514-4dbd-920f-bf1907a6485d"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf234@FontAwesome",
+                "height": 90,
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "id": "laboresBtn",
+                "itemId": "laboresBtn",
+                "margin": "10px 0px 10px 0px",
+                "params": [
+                    "actividadeslotesGrid"
+                ],
+                "scale": "medium",
+                "style": [
+                    "margin: 2px 10px 2px 10px;",
+                    "background-color: #424242;"
+                ],
+                "text": "Labores",
+                "width": "80%"
+            },
+            "name": "MyButton5",
+            "designerId": "9c4524a5-3225-404f-96c8-b7c5dd7d0fbe"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf009@FontAwesome",
+                "height": 90,
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "id": "tablasBtn",
+                "margin": "10px 0px 10px 0px",
+                "params": [
+                    "menuTabla"
+                ],
+                "scale": "medium",
+                "style": [
+                    "margin: 2px 10px 2px 10px;",
+                    "background-color: #424242;"
+                ],
+                "text": "Tablas",
+                "width": "80%"
+            },
+            "name": "MyButton6",
+            "designerId": "a6e21827-cc9e-415d-ae91-976065fdc7a7"
+        }
+    ]
+}

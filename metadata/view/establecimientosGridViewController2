@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "lotesgrid",
+        "designer|userClassName": "establecimientosGridViewController2"
+    },
+    "name": "establecimientosGridViewController2",
+    "designerId": "67528a80-51fc-4520-b215-2aea0486692e"
+}

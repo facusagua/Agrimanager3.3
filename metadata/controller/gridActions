@@ -1,0 +1,80 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "gridActions"
+    },
+    "name": "MyController",
+    "designerId": "17dced56-cb05-4512-b79c-5c7a7fb489c7",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "application"
+                ],
+                "fn": "init",
+                "implHandler": [
+                    "this.control({",
+                    "            'gridpanel#actividadesGrid': {",
+                    "                rowclick: this.onActividadesGridRowClic",
+                    "            }",
+                    "        });"
+                ]
+            },
+            "name": "init",
+            "designerId": "d30a52d3-9bea-4dc5-9745-0c654858239f"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "tableview",
+                    "record",
+                    "tr",
+                    "rowIndex",
+                    "e",
+                    "eOpts"
+                ],
+                "fn": "onActividadesGridRowClic",
+                "implHandler": [
+                    "debugger;",
+                    "var laboresGrid = Ext.create(\"MyApp.view.laboresGrid\")[0];",
+                    "var laboresListGrid = Ext.ComponentQuery.query('#laboresListGrid')[0];",
+                    "var codigo = record.data.codigo;",
+                    "f_crud.load_store(\"Labores\");",
+                    "var Labores = Ext.getStore('Labores');",
+                    "Labores.filter('cod_lote_actividad',codigo);",
+                    "laboresListGrid.bindStore(Labores);",
+                    "MyApp.lote = codigo;",
+                    "//var laboresForm = Ext.create(\"MyApp.view.laboresForm\")[0];",
+                    "//var loteLab = Ext.ComponentQuery.query('#loteLabInp')[0];",
+                    "//console.log(loteLab);",
+                    "//loteLab.setValue(codigo);",
+                    "var cmp = Ext.ComponentQuery.query('#laboresGrid')[0];",
+                    "if(!cmp){",
+                    "    var cmp = Ext.create(\"MyApp.view.laboresGrid\")[0];",
+                    "    MyApp.main.add(cmp);",
+                    "}",
+                    "MyApp.main.getLayout().setActiveItem(cmp);"
+                ]
+            },
+            "name": "onActividadesGridRowClic",
+            "designerId": "d1395da4-b9fd-4926-b1d4-4e34da7d8464"
+        }
+    ]
+}

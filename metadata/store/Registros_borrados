@@ -1,0 +1,28 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "designer|userClassName": "Registros_borrados",
+        "model": "Registros_borrados",
+        "storeId": "Registros_borrados"
+    },
+    "name": "Personal1",
+    "designerId": "c177de37-ba02-411c-a05f-7162f7ce1225",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "d511ff5d-9686-472a-93d3-4a1ee2ba7061"
+        }
+    ]
+}

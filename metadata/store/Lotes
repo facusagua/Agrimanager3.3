@@ -1,0 +1,28 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "designer|userClassName": "Lotes",
+        "model": "Lotes",
+        "storeId": "Lotes"
+    },
+    "name": "Labores_insumos2",
+    "designerId": "ab265e24-28c1-478c-a22b-8b120d5c9377",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "eee6188a-9f4a-4b7c-b5aa-523b8dad7d18"
+        }
+    ]
+}

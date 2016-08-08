@@ -1,0 +1,29 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "Insumos",
+        "model": "Insumos",
+        "storeId": "Insumos"
+    },
+    "name": "Establecimientos1",
+    "designerId": "72e30337-9b5c-477e-ac95-2f4223c41825",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "d452f278-31fb-416d-ab20-f87e07a4d0e0"
+        }
+    ]
+}

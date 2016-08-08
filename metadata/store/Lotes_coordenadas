@@ -1,0 +1,29 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "Lotes_coordenadas",
+        "model": "Lotes_coordenadas",
+        "storeId": "Lotes_coordenadas"
+    },
+    "name": "Lotes1",
+    "designerId": "f28022cb-3d21-403b-a83a-0cb5a3489c02",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "032b22dd-7200-4888-a2a1-486dee9c48ee"
+        }
+    ]
+}

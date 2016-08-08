@@ -1,0 +1,55 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "TareasMysql",
+        "model": "Tareas",
+        "storeId": "TareasMysql"
+    },
+    "name": "rubroinsumosStore1",
+    "designerId": "128a651e-f451-4a05-9194-fa1ada022a12",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{sql: 'select codigo,descrip as descripcion ,valor as precio,tipo,uni_medida as um,id from tareas'}"
+                ],
+                "url": "php/listado.php"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "f6943e5e-b047-43bb-89ab-cb010097004c",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": [
+                            "reqList"
+                        ]
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "af94f6c1-3d60-41cb-be16-edbebe5217e4"
+                }
+            ]
+        }
+    ]
+}

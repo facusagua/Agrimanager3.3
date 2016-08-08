@@ -1,0 +1,29 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "Secuencia",
+        "model": "Secuencia",
+        "storeId": "Secuencia"
+    },
+    "name": "Personal3",
+    "designerId": "0a21b546-b0cf-4ef6-94f7-e88b0a7f21e1",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "4265ceae-64db-4ab6-8fb7-57190a018a9b"
+        }
+    ]
+}

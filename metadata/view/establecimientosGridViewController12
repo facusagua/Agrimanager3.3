@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "sincpanel",
+        "designer|userClassName": "establecimientosGridViewController12"
+    },
+    "name": "establecimientosGridViewController12",
+    "designerId": "2b2166b8-b675-4233-a8e6-6d8613f0404d"
+}

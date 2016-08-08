@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "campaniasgrid",
+        "designer|userClassName": "establecimientosGridViewController3"
+    },
+    "name": "establecimientosGridViewController3",
+    "designerId": "604e5ed9-e7bf-47e6-a881-031372f89f05"
+}

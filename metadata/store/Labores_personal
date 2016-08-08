@@ -1,0 +1,29 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "Labores_personal",
+        "model": "Labores_personal",
+        "storeId": "Labores_personal"
+    },
+    "name": "Labores_maquinaria1",
+    "designerId": "f9215490-0d3e-4476-b242-d69be85d8796",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "04d56cd2-70e8-4c22-bb77-56fcbc4a034b"
+        }
+    ]
+}

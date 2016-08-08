@@ -1,0 +1,32 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "Depositos",
+        "model": "Depositos",
+        "storeId": "Depositos"
+    },
+    "name": "Contratistas1",
+    "designerId": "f1d8f991-a68d-4558-b933-471cd68c8941",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "localProxy"
+            },
+            "name": "MyLocalStorageProxy1",
+            "designerId": "5dbc01d9-1ad1-4da5-aa7e-1190553e7380"
+        }
+    ]
+}

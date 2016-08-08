@@ -1,0 +1,29 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "Personal",
+        "model": "Personal",
+        "storeId": "Personal"
+    },
+    "name": "Maquinaria1",
+    "designerId": "ebac3d0f-7020-4f2a-9c61-977fd5bfec5f",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "67606fc4-dfc1-40e6-9e6f-68d0a6bbcc73"
+        }
+    ]
+}

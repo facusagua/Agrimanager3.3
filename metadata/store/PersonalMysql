@@ -1,0 +1,56 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "PersonalMysql",
+        "model": "Personal",
+        "storeId": "PersonalMysql"
+    },
+    "name": "maquinariasStore1",
+    "designerId": "94e6a261-483d-41b3-a272-4e319ef72077",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{sql: 'SELECT id,codigo,nombre FROM personal'}"
+                ],
+                "url": "php/listado.php"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "13ac2382-8ff9-4b95-9181-aaef962e885d",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": [
+                            "reqList"
+                        ]
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "1dcb137e-4a00-4206-8a48-83a1e31b33cc"
+                }
+            ]
+        }
+    ]
+}

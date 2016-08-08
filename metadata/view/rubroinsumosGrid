@@ -1,0 +1,97 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "rubroinsumosgrid",
+        "designer|userClassName": "rubroinsumosGrid",
+        "height": 250,
+        "itemId": "rubroinsumosGrid",
+        "layout": "border",
+        "width": 400
+    },
+    "name": "actividadesGrid3",
+    "designerId": "8341fb09-dd39-41bf-aac3-28a5a6b5c0c1",
+    "viewControllerInstanceId": "f510553c-66c9-4639-8697-3d921f6f6502",
+    "viewModelInstanceId": "d347f526-6acd-4782-9ae4-d027553d57c1",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "bodyStyle": [
+                    "color: #424242;"
+                ],
+                "dock": "top",
+                "forceFit": true,
+                "glyph": "xf198@FontAwesome",
+                "iconAlign": "left",
+                "id": "rubroinsumosGrid",
+                "itemId": "rubroinsumosGrid",
+                "layout|region": "center",
+                "layout|split": false,
+                "layout|splitterResize": false,
+                "rtl": false,
+                "split": true,
+                "store": "Rubros",
+                "style": [
+                    "padding: 5px 5px 5px 5px;",
+                    "color: #424242;"
+                ],
+                "title": "Rubros Insumos",
+                "titleAlign": "left"
+            },
+            "name": "MyGridPanel",
+            "designerId": "0035261f-374f-4bb0-a31f-6263d5b44b81",
+            "cn": [
+                {
+                    "type": "Ext.view.Table",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyTable",
+                    "designerId": "757961ce-038b-4e79-81ea-765f9853a98a"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "codigo",
+                        "format": "00",
+                        "text": "Codigo"
+                    },
+                    "name": "MyNumberColumn2",
+                    "designerId": "cea18acc-36bf-4ef6-9009-47cdf786f829"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "descripcion",
+                        "text": "Descripcion"
+                    },
+                    "name": "MyColumn2",
+                    "designerId": "7665ea4c-f8ed-460e-b3a1-4ceaa375ec4c"
+                }
+            ]
+        }
+    ]
+}

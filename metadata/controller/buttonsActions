@@ -1,0 +1,294 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "buttonsActions",
+        "stores": [
+            "lotesStore",
+            "establecimientosStore"
+        ]
+    },
+    "name": "MyController",
+    "designerId": "02661f4e-3901-40aa-80db-1eca209f27e2",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "application"
+                ],
+                "fn": "init",
+                "implHandler": [
+                    "this.control({",
+                    "    'button#returnView': {",
+                    "        click: this.onClickReturn",
+                    "    },",
+                    "    'button#establecimientosBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#lotesBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#actividadesBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#campaniasBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#tareasBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#personalBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#rubroinsumosBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#insumosBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#maquinariasBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#contratistasBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#depositosBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#actividadeslotesBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#tablasBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#laboresBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#aceptaInsumoLab': {",
+                    "        click: this.onClickAcceptIns",
+                    "    },",
+                    "    'button#aceptaPerLabBtn': {",
+                    "        click: this.onClickAcceptPers",
+                    "    },",
+                    "    'button#aceptaMaqLabBtn': {",
+                    "        click: this.onClickAcceptMaq",
+                    "    },",
+                    "    'button#sincBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#configBtn': {",
+                    "        click: this.openGridView",
+                    "    },",
+                    "    'button#aceptarConexionbtn': {",
+                    "        click: this.OnClickGuardaConfig",
+                    "    }",
+                    "});"
+                ]
+            },
+            "name": "init",
+            "designerId": "bb0a5a77-03ef-4081-8583-dcab2893ad16"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onClickReturn",
+                "implHandler": [
+                    "if (MyApp.main.getLayout().getLayoutItems().length > 1){",
+                    "                    var cardToRemove = MyApp.main.getLayout().activeItem;",
+                    "                    MyApp.main.getLayout().prev();",
+                    "                    MyApp.main.remove(cardToRemove);",
+                    "                    console.log(MyApp.main.getLayout().getLayoutItems());",
+                    "                }",
+                    "if (MyApp.main.getLayout().getLayoutItems().length == 1){",
+                    "            var btn = Ext.ComponentQuery.query('#returnView')[0];",
+                    "            btn.hide();",
+                    "}"
+                ]
+            },
+            "name": "onClickReturn",
+            "designerId": "884835fe-9015-4eb5-99cf-9f0d15cf9f60"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "component"
+                ],
+                "fn": "openGridView",
+                "implHandler": [
+                    "debugger;",
+                    "var me = component;",
+                    "var cmp = Ext.ComponentQuery.query(me.params)[0];",
+                    "if(!cmp){",
+                    "    var cmp = Ext.create(\"MyApp.view.\"+me.params);",
+                    "    MyApp.main.add(cmp);",
+                    "}",
+                    "MyApp.main.getLayout().setActiveItem(cmp);",
+                    "var btn = Ext.ComponentQuery.query('#returnView')[0];",
+                    "btn.show();"
+                ]
+            },
+            "name": "openGridView",
+            "designerId": "fd151dc5-9f87-41cd-bf77-251fdee1921f"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onClickAcceptIns",
+                "implHandler": [
+                    "var form_panel = Ext.ComponentQuery.query('#formpanel')[0];",
+                    "var store = Ext.getStore('Labores_insumos');",
+                    "var insDescrip = Ext.ComponentQuery.query('#insDescrip')[0];",
+                    "var insCant = Ext.ComponentQuery.query('#insCant')[0];",
+                    "var insDeposito = Ext.ComponentQuery.query('#insDeposito')[0];",
+                    "var newrecord = Ext.create('MyApp.model.Labores_insumos');",
+                    "f_crud.secuencia(function(rtn){",
+                    "    if (rtn !== -1){",
+                    "        var id_labores  = 1; //form_panel.down('#form').getRecord().get('id');",
+                    "        newrecord.set('id',rtn);",
+                    "        newrecord.set('id_labores', id_labores);",
+                    "        newrecord.set('tipo','T');",
+                    "        newrecord.set('cod_insumo',insDescrip.value);",
+                    "        newrecord.set('cod_deposito',insDeposito.value);",
+                    "        newrecord.set('cantidad',insCant.value);",
+                    "        store.add(newrecord);",
+                    "    }",
+                    "    var panel = Ext.ComponentQuery.query('#nuevoInsumoPnl')[0];",
+                    "    panel.collapse();",
+                    "    insDescrip.reset();",
+                    "    insCant.reset();",
+                    "    insDeposito.reset();",
+                    "});"
+                ]
+            },
+            "name": "onClickAcceptIns",
+            "designerId": "9b5d9650-a328-4ef8-a1b7-e62645ff7670"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onClickAcceptPers",
+                "implHandler": [
+                    "var store = Ext.getStore('Labores_personal');",
+                    "var personalPer = Ext.ComponentQuery.query('#personalPer')[0];",
+                    "var cantidadPer = Ext.ComponentQuery.query('#cantidadPer')[0];",
+                    "var precioPer = Ext.ComponentQuery.query('#precioPer')[0];",
+                    "var importePer = Ext.ComponentQuery.query('#importePer')[0];",
+                    "var newrecord = Ext.create('MyApp.model.Labores_personal');",
+                    "f_crud.secuencia(function(rtn){",
+                    "    if (rtn !== -1){",
+                    "        var id_labores  = 1; //form_panel.down('#form').getRecord().get('id');",
+                    "        newrecord.set('id',rtn);",
+                    "        newrecord.set('id_labores', id_labores);",
+                    "        newrecord.set('cod_empleado',personalPer.value);",
+                    "        newrecord.set('cantidad',cantidadPer.value);",
+                    "        newrecord.set('precio',precioPer.value);",
+                    "        newrecord.set('importe',importePer.value);",
+                    "        store.add(newrecord);",
+                    "    }",
+                    "    var panel = Ext.ComponentQuery.query('#nuevoPersonaPnl')[0];",
+                    "    panel.collapse();",
+                    "    personalPer.reset();",
+                    "    cantidadPer.reset();",
+                    "    precioPer.reset();",
+                    "    importePer.reset();",
+                    "});"
+                ]
+            },
+            "name": "onClickAcceptPers",
+            "designerId": "9e9cf3d1-7462-42e6-8f7c-f5061f5b5bf8"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onClickAcceptMaq",
+                "implHandler": [
+                    "var store = Ext.getStore('Labores_maquinaria');",
+                    "var maqCodigo = Ext.ComponentQuery.query('#maqCodigo')[0];",
+                    "var maqCantidad = Ext.ComponentQuery.query('#maqCantidad')[0];",
+                    "var newrecord = Ext.create('MyApp.model.Labores_maquinaria');",
+                    "f_crud.secuencia(function(rtn){",
+                    "    if (rtn !== -1){",
+                    "        var id_labores  = 1; //form_panel.down('#form').getRecord().get('id');",
+                    "        newrecord.set('id',rtn);",
+                    "        newrecord.set('id_labores', id_labores);",
+                    "        newrecord.set('cod_maquina',maqCodigo.value);",
+                    "        newrecord.set('cantidad',maqCantidad.value);",
+                    "        store.add(newrecord);",
+                    "    }",
+                    "    var panel = Ext.ComponentQuery.query('#nuevoMaqPnl')[0];",
+                    "    panel.collapse();",
+                    "    maqCodigo.reset();",
+                    "    maqCantidad.reset();",
+                    "});"
+                ]
+            },
+            "name": "onClickAcceptMaq",
+            "designerId": "f6274c4c-d2c5-40a4-981d-f50b71dbff2e"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "OnClickGuardaConfig",
+                "implHandler": [
+                    "var usuarioImp = Ext.ComponentQuery.query(\"#usuarioImp\")[0];",
+                    "var claveImp = Ext.ComponentQuery.query(\"#claveImp\")[0];",
+                    "var baseImp = Ext.ComponentQuery.query(\"#baseImp\")[0];",
+                    "var servidorImp = Ext.ComponentQuery.query(\"#servidorImp\")[0];",
+                    "MyApp.usuario       = usuarioImp.getValue();",
+                    "MyApp.clave         = claveImp.getValue();",
+                    "MyApp.base_nombre   = baseImp.getValue();",
+                    "MyApp.base_url      = servidorImp.getValue();",
+                    "",
+                    "window.localStorage.setItem(\"agrimanager_usuario\",usuarioImp.getValue());",
+                    "window.localStorage.setItem(\"agrimanager_clave\",claveImp.getValue());",
+                    "window.localStorage.setItem(\"agrimanager_base\",baseImp.getValue());",
+                    "window.localStorage.setItem(\"agrimanager_servidor\",servidorImp.getValue());",
+                    "this.onClickReturn();"
+                ]
+            },
+            "name": "OnClickGuardaConfig",
+            "designerId": "504785be-8b65-4f65-8ae5-0a5bdad40288"
+        }
+    ]
+}

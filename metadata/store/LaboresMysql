@@ -1,0 +1,56 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "designer|userClassName": "LaboresMysql",
+        "model": "Labores",
+        "storeId": "LaboresMysql"
+    },
+    "name": "lotesStore1",
+    "designerId": "47e28566-f8b9-4d23-a5a5-3e69c1eefb4d",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{sql: 'select l.id,fecha,cod_lote_actividad,cod_lote,cod_area,cod_establecimiento,cod_periodo,cod_tarea,l.cantidad,precio_tarea,cod_contratista, t.descrip as nombre_labor from labores l JOIN tareas t ON l.cod_tarea = t.codigo'}"
+                ],
+                "url": "php/listado.php"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "b82cfa1e-a185-4e05-a4db-bba7d1f345eb",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": [
+                            "reqList"
+                        ]
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "c4b9af21-abc4-469e-8392-af34889642ac"
+                }
+            ]
+        }
+    ]
+}

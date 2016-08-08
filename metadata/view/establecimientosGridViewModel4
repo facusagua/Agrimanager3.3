@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tareasgrid",
+        "designer|userClassName": "establecimientosGridViewModel4"
+    },
+    "name": "establecimientosGridViewModel4",
+    "designerId": "886bc9aa-9d15-4c8a-8661-3afdb995606f"
+}

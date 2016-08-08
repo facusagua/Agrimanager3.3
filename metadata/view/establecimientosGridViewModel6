@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "rubroinsumosgrid",
+        "designer|userClassName": "establecimientosGridViewModel6"
+    },
+    "name": "establecimientosGridViewModel6",
+    "designerId": "d347f526-6acd-4782-9ae4-d027553d57c1"
+}

@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "depositosgrid",
+        "designer|userClassName": "establecimientosGridViewController10"
+    },
+    "name": "establecimientosGridViewController10",
+    "designerId": "dc3e301b-b844-4584-b2a0-2cb047135e28"
+}

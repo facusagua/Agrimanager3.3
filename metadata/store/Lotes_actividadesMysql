@@ -1,0 +1,56 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "designer|userClassName": "Lotes_actividadesMysql",
+        "model": "Lotes_actividades",
+        "storeId": "Lotes_actividadesMysql"
+    },
+    "name": "lotesStore1",
+    "designerId": "20e7aa32-c64d-43b3-b93f-d8f740489f0e",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{sql: 'SELECT id,codigo,descripcion as nombre,cod_lote,cod_establecimiento,cod_actividad,cod_periodo,fecha_desde as desde,fecha_hasta as hasta FROM lote_actividad'}"
+                ],
+                "url": "php/listado.php"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "789c01b7-5b53-4cd5-a4f1-4967cf37eda1",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": [
+                            "reqList"
+                        ]
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "75e58bc5-3175-4170-8788-3233d55d2118"
+                }
+            ]
+        }
+    ]
+}

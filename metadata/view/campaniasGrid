@@ -1,0 +1,97 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "campaniasgrid",
+        "designer|userClassName": "campaniasGrid",
+        "height": 250,
+        "itemId": "campaniasGrid",
+        "layout": "border",
+        "width": 400
+    },
+    "name": "actividadesGrid1",
+    "designerId": "a4d21ecb-97f2-4299-9e7a-c6ac73e905f4",
+    "viewControllerInstanceId": "604e5ed9-e7bf-47e6-a881-031372f89f05",
+    "viewModelInstanceId": "e16fe12a-145a-48e1-9821-6e480a64ffeb",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "bodyStyle": [
+                    "color: #424242;"
+                ],
+                "dock": "top",
+                "forceFit": true,
+                "glyph": "xf073@FontAwesome",
+                "iconAlign": "left",
+                "id": null,
+                "itemId": "campaniasGrid",
+                "layout|region": "center",
+                "layout|split": false,
+                "layout|splitterResize": false,
+                "rtl": false,
+                "split": true,
+                "store": "Campanias",
+                "style": [
+                    "padding: 5px 5px 5px 5px;",
+                    "color: #424242;"
+                ],
+                "title": "Campañas",
+                "titleAlign": "left"
+            },
+            "name": "MyGridPanel",
+            "designerId": "a8663868-cb36-4f5d-a00d-d921778776b2",
+            "cn": [
+                {
+                    "type": "Ext.view.Table",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyTable",
+                    "designerId": "fd0edc22-d453-4819-b6d9-59542cf0d2ff"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "codigo",
+                        "format": "00",
+                        "text": "Codigo"
+                    },
+                    "name": "MyNumberColumn",
+                    "designerId": "d54ac497-f1a9-4d26-8b49-8883bc66abf0"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "descripcion",
+                        "text": "Descripcion"
+                    },
+                    "name": "MyColumn",
+                    "designerId": "b7a34720-171e-4f04-baab-605f56150adc"
+                }
+            ]
+        }
+    ]
+}

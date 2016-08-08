@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "configpanel",
+        "designer|userClassName": "establecimientosGridViewModel15"
+    },
+    "name": "establecimientosGridViewModel15",
+    "designerId": "84a27273-283c-44b3-b1c7-d4d6ff891ce0"
+}

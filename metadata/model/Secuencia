@@ -1,0 +1,41 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Secuencia"
+    },
+    "name": "MyModel",
+    "designerId": "d0391f9b-ae16-45d3-a571-313cd66ba728",
+    "cn": [
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyInteger28",
+            "designerId": "ef033bc8-19c9-4447-a47d-5ec1c8caa1c4"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "Secuencia"
+            },
+            "name": "MyInteger29",
+            "designerId": "6287ce61-5aca-4828-88a6-c649dd0ba6e6"
+        }
+    ]
+}

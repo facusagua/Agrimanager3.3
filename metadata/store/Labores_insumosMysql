@@ -1,0 +1,56 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "designer|userClassName": "Labores_insumosMysql",
+        "model": "Lotes",
+        "storeId": "Labores_insumosMysql"
+    },
+    "name": "laboresStore1",
+    "designerId": "106d265d-881f-4352-b450-8c6404969d47",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{sql: 'select id, id_labores,cod_insumo, cantidad, dosis, cod_deposito from labores_insumos'}"
+                ],
+                "url": "php/listado.php"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "7b128052-745b-44ff-9405-ef3a08a5fd32",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": [
+                            "reqList"
+                        ]
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "dd16959e-660f-4644-8236-7b8fb33bb755"
+                }
+            ]
+        }
+    ]
+}

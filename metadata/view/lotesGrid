@@ -1,0 +1,97 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "lotesgrid",
+        "designer|userClassName": "lotesGrid",
+        "height": 250,
+        "itemId": "lotesGrid",
+        "layout": "border",
+        "width": 400
+    },
+    "name": "establecimientosGrid1",
+    "designerId": "8440c79c-6d2a-4b6a-b931-4e244f67b7f4",
+    "viewControllerInstanceId": "67528a80-51fc-4520-b215-2aea0486692e",
+    "viewModelInstanceId": "a37b8a59-7a18-46bb-8ff9-a976061e1e2b",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "bodyStyle": [
+                    "color: #424242;"
+                ],
+                "dock": "top",
+                "forceFit": true,
+                "glyph": "xf200@FontAwesome",
+                "iconAlign": "left",
+                "id": "lotesGrid",
+                "itemId": "lotesGrid",
+                "layout|region": "center",
+                "layout|split": false,
+                "layout|splitterResize": false,
+                "rtl": false,
+                "split": true,
+                "store": "Lotes",
+                "style": [
+                    "padding: 5px 5px 5px 5px;",
+                    "color: #424242;"
+                ],
+                "title": "Lotes",
+                "titleAlign": "left"
+            },
+            "name": "MyGridPanel",
+            "designerId": "910b2de5-0150-432d-b26e-bded9cdc0c20",
+            "cn": [
+                {
+                    "type": "Ext.view.Table",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyTable",
+                    "designerId": "8443710d-fd90-4171-aabd-6fc74aa805bd"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "codigo",
+                        "format": "00",
+                        "text": "Codigo"
+                    },
+                    "name": "MyNumberColumn4",
+                    "designerId": "75af133e-0c98-402a-a20f-0eb7c36b3149"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "nombre",
+                        "text": "Nombre"
+                    },
+                    "name": "MyColumn4",
+                    "designerId": "2b55915f-64d0-48eb-b0fa-26f3025ac561"
+                }
+            ]
+        }
+    ]
+}

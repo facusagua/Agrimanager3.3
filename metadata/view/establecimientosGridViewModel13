@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "laboresgrid",
+        "designer|userClassName": "establecimientosGridViewModel13"
+    },
+    "name": "establecimientosGridViewModel13",
+    "designerId": "210d9d33-308a-426a-9183-ff61a1de444b"
+}

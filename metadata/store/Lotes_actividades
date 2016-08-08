@@ -1,0 +1,29 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "Lotes_actividades",
+        "model": "Lotes_actividades",
+        "storeId": "Lotes_actividades"
+    },
+    "name": "Lotes1",
+    "designerId": "11b1c268-6ed1-4b10-ae74-2ca187aba404",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "94de5f82-e3c7-471f-a666-77eb7b823334"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "Contratistas",
+        "model": "Contratistas",
+        "storeId": "Contratistas"
+    },
+    "name": "Campanias1",
+    "designerId": "d42555d1-287a-4ce6-9cfe-b6617dfa252b",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "2ffcbf24-a519-4923-819e-4905c4fd6dde"
+        }
+    ]
+}

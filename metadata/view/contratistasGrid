@@ -1,0 +1,97 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "contratistasgrid",
+        "designer|userClassName": "contratistasGrid",
+        "height": 250,
+        "itemId": "contratistasGrid",
+        "layout": "border",
+        "width": 400
+    },
+    "name": "maquinariaGrid1",
+    "designerId": "47bfd899-6af0-4708-bc19-aa3f19618a12",
+    "viewControllerInstanceId": "0fff1b12-96c2-4637-9fed-d7335b010d65",
+    "viewModelInstanceId": "65d0a980-23b6-4669-b8c9-e131963bd301",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "bodyStyle": [
+                    "color: #424242;"
+                ],
+                "dock": "top",
+                "forceFit": true,
+                "glyph": "xf0ad@FontAwesome",
+                "iconAlign": "left",
+                "id": "contratistasGrid",
+                "itemId": "contratistasGrid",
+                "layout|region": "center",
+                "layout|split": false,
+                "layout|splitterResize": false,
+                "rtl": false,
+                "split": true,
+                "store": "Contratistas",
+                "style": [
+                    "padding: 5px 5px 5px 5px;",
+                    "color: #424242;"
+                ],
+                "title": "Contratista",
+                "titleAlign": "left"
+            },
+            "name": "MyGridPanel",
+            "designerId": "91e81a04-53cd-4e58-91b1-9931d52f1632",
+            "cn": [
+                {
+                    "type": "Ext.view.Table",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyTable",
+                    "designerId": "2af19289-b42e-4f6a-ad36-0c53ce9deca4"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "codigo",
+                        "format": "00",
+                        "text": "Codigo"
+                    },
+                    "name": "MyNumberColumn3",
+                    "designerId": "903cd49b-c5fc-4129-8cee-b8d2d8d070a7"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "nombre",
+                        "text": "Nombre"
+                    },
+                    "name": "MyColumn3",
+                    "designerId": "56f9c3c8-8046-43b4-b5eb-fa4122a79e90"
+                }
+            ]
+        }
+    ]
+}

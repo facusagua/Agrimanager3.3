@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "maquinariasgrid",
+        "designer|userClassName": "establecimientosGridViewModel8"
+    },
+    "name": "establecimientosGridViewModel8",
+    "designerId": "e3ea50e4-0163-42d2-afab-4c1fb9c4883a"
+}

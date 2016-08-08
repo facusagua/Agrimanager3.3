@@ -1,0 +1,97 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "depositosgrid",
+        "designer|userClassName": "depositosGrid",
+        "height": 250,
+        "itemId": "depositosGrid",
+        "layout": "border",
+        "width": 400
+    },
+    "name": "contratistaGrid1",
+    "designerId": "7987cbc4-6c1e-4581-95a7-e37c0ebf7707",
+    "viewControllerInstanceId": "dc3e301b-b844-4584-b2a0-2cb047135e28",
+    "viewModelInstanceId": "3e525bff-9652-46b2-bf17-bb575197627f",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "bodyStyle": [
+                    "color: #424242;"
+                ],
+                "dock": "top",
+                "forceFit": true,
+                "glyph": "xf18c@FontAwesome",
+                "iconAlign": "left",
+                "id": "depositoGrid",
+                "itemId": "depositoGrid",
+                "layout|region": "center",
+                "layout|split": false,
+                "layout|splitterResize": false,
+                "rtl": false,
+                "split": true,
+                "store": "Depositos",
+                "style": [
+                    "padding: 5px 5px 5px 5px;",
+                    "color: #424242;"
+                ],
+                "title": "Deposito",
+                "titleAlign": "left"
+            },
+            "name": "MyGridPanel",
+            "designerId": "08695461-f71d-4fba-bbc8-4025ca29db62",
+            "cn": [
+                {
+                    "type": "Ext.view.Table",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyTable",
+                    "designerId": "37a9bdf9-f3eb-4faa-ac90-1499e837cd1d"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "codigo",
+                        "format": "00",
+                        "text": "Codigo"
+                    },
+                    "name": "MyNumberColumn2",
+                    "designerId": "b6a01510-6be2-4d93-bff4-cadd2e262d3e"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "nombre",
+                        "text": "Nombre"
+                    },
+                    "name": "MyColumn2",
+                    "designerId": "c98ace14-3dde-4e70-994f-65955d7463ac"
+                }
+            ]
+        }
+    ]
+}

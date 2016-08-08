@@ -1,0 +1,183 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userAlias": "sync",
+        "designer|userClassName": "SincPanel",
+        "height": null,
+        "id": "SincPanel",
+        "itemId": "SincPanel",
+        "layout": "vbox",
+        "width": null
+    },
+    "name": "laboresForm1",
+    "designerId": "b15e4ceb-d59b-4a04-a8ad-119dbc6ca32f",
+    "viewControllerInstanceId": "2b2166b8-b675-4233-a8e6-6d8613f0404d",
+    "viewModelInstanceId": "36b3cf14-5409-47de-a88e-074c2b367109",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "sincronizar",
+                "layout|flex": 1,
+                "title": "Sincronizar"
+            },
+            "name": "MyPanel6",
+            "designerId": "e3f54480-3f46-40d1-9128-34d8ee506378",
+            "cn": [
+                {
+                    "type": "Ext.form.FieldSet",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": ""
+                    },
+                    "name": "MyFieldSet",
+                    "designerId": "0fce8c2b-de80-497f-b8dc-2420469d1574",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Tablas",
+                                "itemId": "tabla",
+                                "layout|anchor": "100%"
+                            },
+                            "name": "MyTextField3",
+                            "designerId": "4d3af608-7334-4b35-8b12-6b036ade8637"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "estado_sinc",
+                        "text": "Estado: "
+                    },
+                    "name": "MyLabel1",
+                    "designerId": "73e7ff9e-0919-4a5e-9fde-47634aef70f5"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "height": 60,
+                "itemId": "laboresFoterTlb",
+                "layout|flex": 0,
+                "style": [
+                    "background-color:#424242;"
+                ]
+            },
+            "name": "MyToolbar1",
+            "designerId": "eac387ba-dd55-4807-ad93-2769bf446f14",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "glyph": "xf01a@FontAwesome",
+                        "iconCls": "",
+                        "itemId": "aceptarLaboresbtn",
+                        "layout|flex": null,
+                        "scale": null,
+                        "text": "Iniciar"
+                    },
+                    "name": "MyButton",
+                    "designerId": "dcf8d9a4-8fbc-41bf-937d-0ea8a0a61846",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onAceptarLaboresbtnClick",
+                                "implHandler": [
+                                    "var panel = Ext.ComponentQuery.query('#SincPanel')[0];",
+                                    "panel.f_sincronizar();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onAceptarLaboresbtnClick",
+                            "designerId": "20b42e41-1fd8-4637-8d34-85ef7680b142"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "glyph": null,
+                        "id": "cancelBtn1",
+                        "itemId": "cancelBtn",
+                        "layout|flex": null,
+                        "params": [
+                            "alert"
+                        ],
+                        "text": "Cancelar"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "5e9b4d67-365b-4a48-9e83-7e5946da14bd"
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "f_sincronizar",
+                "implHandler": [
+                    " f_sinc.agregar_todas();",
+                    " debugger;",
+                    " f_sinc.sincronizar();"
+                ]
+            },
+            "name": "f_sincronizar",
+            "designerId": "7f8fbfd7-e4b4-471b-abab-beba05f52c79"
+        }
+    ]
+}

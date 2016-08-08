@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "personalgrid",
+        "designer|userClassName": "establecimientosGridViewController5"
+    },
+    "name": "establecimientosGridViewController5",
+    "designerId": "bc385aa7-f8c9-4051-a286-f052022f0a56"
+}

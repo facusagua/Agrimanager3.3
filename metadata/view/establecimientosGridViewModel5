@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "personalgrid",
+        "designer|userClassName": "establecimientosGridViewModel5"
+    },
+    "name": "establecimientosGridViewModel5",
+    "designerId": "c2e04cb0-e670-4ab6-bbae-26883cf9774d"
+}

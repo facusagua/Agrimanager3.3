@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "maquinariasgrid",
+        "designer|userClassName": "establecimientosGridViewController8"
+    },
+    "name": "establecimientosGridViewController8",
+    "designerId": "25eeff38-429a-479f-ba89-e14dc9cddc79"
+}

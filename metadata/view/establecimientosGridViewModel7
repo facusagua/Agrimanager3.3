@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "insumosgrid",
+        "designer|userClassName": "establecimientosGridViewModel7"
+    },
+    "name": "establecimientosGridViewModel7",
+    "designerId": "cc1c44de-1deb-419f-8161-bec248322a4f"
+}

@@ -1,0 +1,59 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "data": [
+            "[{\"codigo\":60,\"descripcion\":\"incidunt\",\"precio\":194.14},{\"codigo\":783,\"descripcion\":\"ea\",\"precio\":844.25},{\"codigo\":976,\"descripcion\":\"quae\",\"precio\":573.47},{\"codigo\":718,\"descripcion\":\"doloribus\",\"precio\":184.36},{\"codigo\":367,\"descripcion\":\"laudantium\",\"precio\":543.28},{\"codigo\":103,\"descripcion\":\"tenetur\",\"precio\":61.51},{\"codigo\":198,\"descripcion\":\"facilis\",\"precio\":417.17},{\"codigo\":119,\"descripcion\":\"dignissimos\",\"precio\":871.9},{\"codigo\":48,\"descripcion\":\"eveniet\",\"precio\":291.58},{\"codigo\":508,\"descripcion\":\"quis\",\"precio\":334.44},{\"codigo\":967,\"descripcion\":\"molestias\",\"precio\":859.45},{\"codigo\":571,\"descripcion\":\"ab\",\"precio\":559.5},{\"codigo\":713,\"descripcion\":\"voluptatem\",\"precio\":840.12},{\"codigo\":397,\"descripcion\":\"nisi\",\"precio\":109.4},{\"codigo\":444,\"descripcion\":\"cum\",\"precio\":419.96},{\"codigo\":474,\"descripcion\":\"laboriosam\",\"precio\":535.21},{\"codigo\":258,\"descripcion\":\"molestiae\",\"precio\":746.25},{\"codigo\":263,\"descripcion\":\"optio\",\"precio\":723.7},{\"codigo\":440,\"descripcion\":\"et\",\"precio\":386.68},{\"codigo\":776,\"descripcion\":\"fuga\",\"precio\":724.11},{\"codigo\":849,\"descripcion\":\"rem\",\"precio\":522.84},{\"codigo\":175,\"descripcion\":\"officiis\",\"precio\":227.75},{\"codigo\":590,\"descripcion\":\"ratione\",\"precio\":773.51},{\"codigo\":93,\"descripcion\":\"maiores\",\"precio\":230.07},{\"codigo\":440,\"descripcion\":\"aut\",\"precio\":742.75},{\"codigo\":171,\"descripcion\":\"tenetur\",\"precio\":214.56},{\"codigo\":637,\"descripcion\":\"ullam\",\"precio\":496.58},{\"codigo\":103,\"descripcion\":\"labore\",\"precio\":593.43},{\"codigo\":173,\"descripcion\":\"unde\",\"precio\":978.13},{\"codigo\":85,\"descripcion\":\"sunt\",\"precio\":971.09}]"
+        ],
+        "designer|userClassName": "InsumosMysql",
+        "model": "Insumos",
+        "storeId": "InsumosMysql"
+    },
+    "name": "establecimientosStore1",
+    "designerId": "0d7d5eb3-2d5b-4d21-bf8e-32303af260f0",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{sql: 'SELECT id,cod_articulo as codigo,descripcion,precio_compra as precio,uni_medida as um,cod_rubro,carencia as dias_carencia FROM articulos'}"
+                ],
+                "url": "php/listado.php"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "eeab40c2-676d-4e24-8abb-61b0d620108a",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": [
+                            "reqList"
+                        ]
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "573cb206-2e0d-41e4-8297-1e7b2f891d98"
+                }
+            ]
+        }
+    ]
+}

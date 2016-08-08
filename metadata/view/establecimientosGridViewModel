@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "establecimientosgrid",
+        "designer|userClassName": "establecimientosGridViewModel"
+    },
+    "name": "MyContainer1ViewModel",
+    "designerId": "a6f7e739-ddfc-4a27-9009-8e239fed22b6"
+}

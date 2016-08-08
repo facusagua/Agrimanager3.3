@@ -1,0 +1,59 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "Mensaje",
+        "designer|userClassName": "Mensaje",
+        "height": 250,
+        "modal": true,
+        "title": "Mensaje",
+        "width": 400
+    },
+    "name": "MyWindow",
+    "designerId": "4cc6eb1d-ce36-493e-85b2-a24fc798a06a",
+    "viewControllerInstanceId": "001e3c0f-8e9e-473a-92b5-c25be239b267",
+    "viewModelInstanceId": "063eacc6-aca8-47f0-8bc3-5a9a88b18f7b",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "title",
+                    "msg"
+                ],
+                "fn": "f_mensaje",
+                "implHandler": [
+                    " this.setTitle(title);",
+                    " this.down('#msjContent').setText(msg);"
+                ]
+            },
+            "name": "f_mensaje",
+            "designerId": "22921655-9afb-4b31-8896-f99d70edc7f3"
+        },
+        {
+            "type": "Ext.form.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "msjContent",
+                "margin": "10px 10px 10px 10px",
+                "padding": "10px 10px 10px 10px",
+                "text": "My Label"
+            },
+            "name": "MyLabel",
+            "designerId": "ecd78841-e0ca-4ad5-892d-fd247c794470"
+        }
+    ]
+}

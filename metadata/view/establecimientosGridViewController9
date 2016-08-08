@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "contratistasgrid",
+        "designer|userClassName": "establecimientosGridViewController9"
+    },
+    "name": "establecimientosGridViewController9",
+    "designerId": "0fff1b12-96c2-4637-9fed-d7335b010d65"
+}

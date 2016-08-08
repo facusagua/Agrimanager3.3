@@ -1,0 +1,121 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "establecimientosgrid",
+        "designer|userClassName": "establecimientosGrid",
+        "height": 250,
+        "itemId": "establecimientosGrid",
+        "layout": "border",
+        "width": 400
+    },
+    "name": "MyContainer1",
+    "designerId": "9012de84-66c1-4ddd-ac6f-929ca243d254",
+    "viewControllerInstanceId": "683b12e4-3486-4b24-aabb-b70b51f41854",
+    "viewModelInstanceId": "a6f7e739-ddfc-4a27-9009-8e239fed22b6",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "bodyStyle": [
+                    "color: #424242;"
+                ],
+                "dock": "top",
+                "forceFit": true,
+                "glyph": "xf19c@FontAwesome",
+                "iconAlign": "left",
+                "id": "establecimientosGrid",
+                "itemId": "establecimientosGrid",
+                "layout|region": "center",
+                "layout|split": false,
+                "layout|splitterResize": false,
+                "rtl": false,
+                "split": true,
+                "store": "Establecimientos",
+                "style": [
+                    "padding: 5px 5px 5px 5px;",
+                    "color: #424242;"
+                ],
+                "title": "Establecimientos",
+                "titleAlign": "left"
+            },
+            "name": "MyGridPanel",
+            "designerId": "5dd33cb0-0629-4b3c-90f6-943439d9e64e",
+            "cn": [
+                {
+                    "type": "Ext.view.Table",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyTable",
+                    "designerId": "0aee9c04-cd1b-483b-8885-021c99805fd3"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "codigo",
+                        "format": "00",
+                        "text": "Codigo"
+                    },
+                    "name": "MyNumberColumn3",
+                    "designerId": "55223093-7829-4f9c-99c6-225c9595478d"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "nombre",
+                        "text": "Nombre"
+                    },
+                    "name": "MyColumn3",
+                    "designerId": "8c50b20c-3773-44fb-83af-6bb828795602"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onEstablecimientosGridBeforeRender",
+                "implHandler": [
+                    "        debugger;",
+                    "        this.store_name = 'Establecimientos';",
+                    "        this.model_name = 'MyApp.model.Establecimientos';",
+                    "        this.form_name  = 'MyApp.view.EstablecimientosForm';",
+                    "        var store = Ext.getStore(this.store_name);",
+                    "        this.form_store_array = [store];",
+                    "        f_crud.load_store(this.store_name);"
+                ],
+                "name": "beforerender",
+                "scope": "me"
+            },
+            "name": "onEstablecimientosGridBeforeRender",
+            "designerId": "e3a6e45a-6d29-472e-aa64-cc9fe301df51"
+        }
+    ]
+}

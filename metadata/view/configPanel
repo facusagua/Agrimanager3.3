@@ -1,0 +1,179 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userAlias": "configPanel",
+        "designer|userClassName": "configPanel",
+        "height": null,
+        "id": "configPanel",
+        "itemId": "configPanel",
+        "layout": "vbox",
+        "width": null
+    },
+    "name": "SincPanel1",
+    "designerId": "78fdc60a-8814-4adf-8cd1-4eef9eaa3191",
+    "viewControllerInstanceId": "034266f2-5bf3-491c-b206-52725040a105",
+    "viewModelInstanceId": "84a27273-283c-44b3-b1c7-d4d6ff891ce0",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "itemId": "login",
+                "layout|flex": 1,
+                "title": "Datos de Conexión"
+            },
+            "name": "MyForm",
+            "designerId": "1232d5d4-414a-4741-b760-7a8d661cf777",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "usuario",
+                        "emptyText": "Usuario",
+                        "fieldLabel": "",
+                        "inputId": "usuarioInp",
+                        "itemId": "usuarioImp",
+                        "layout|anchor": "100%",
+                        "value": [
+                            "Admin"
+                        ]
+                    },
+                    "name": "MyTextField",
+                    "designerId": "5bf0c6fa-e070-4526-91a4-39f1e1208b2c"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "clave",
+                        "emptyText": "Clave",
+                        "fieldLabel": "",
+                        "itemId": "claveImp",
+                        "layout|anchor": "100%",
+                        "value": [
+                            "Synagro"
+                        ]
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "bd62ef1a-e3ff-4689-93e4-602422cfc84d"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "base",
+                        "emptyText": "Base",
+                        "fieldLabel": "",
+                        "itemId": "baseImp",
+                        "layout|anchor": "100%"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "e3aee0cf-0ac9-4eca-b6eb-fddec3ccc65c"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "servidor",
+                        "emptyText": "Servidor",
+                        "fieldLabel": "",
+                        "itemId": "servidorImp",
+                        "layout|anchor": "100%",
+                        "value": [
+                            "sistec01.dnsalias.com"
+                        ]
+                    },
+                    "name": "MyTextField4",
+                    "designerId": "e6b10611-5597-4aa6-ab86-eb72518ae583"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "height": 60,
+                "itemId": "laboresFoterTlb",
+                "layout|flex": 0,
+                "style": [
+                    "background-color:#424242;"
+                ]
+            },
+            "name": "MyToolbar1",
+            "designerId": "af90e6b4-2e5e-4e25-96c1-4fa394cb715a",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "glyph": "xf019@FontAwesome",
+                        "iconCls": "",
+                        "itemId": "aceptarConexionbtn",
+                        "layout|flex": null,
+                        "scale": null,
+                        "text": "Grabar"
+                    },
+                    "name": "MyButton",
+                    "designerId": "098b65a1-d3ce-49f1-83c1-9bdadd05dc15"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "glyph": null,
+                        "id": "cancelBtn2",
+                        "itemId": "cancelBtn",
+                        "layout|flex": null,
+                        "params": [
+                            "alert"
+                        ],
+                        "text": "Cancelar"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "f8b472ec-5c37-4a1a-9c46-47956f2a3a2a"
+                }
+            ]
+        }
+    ]
+}

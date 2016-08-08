@@ -1,0 +1,29 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "Tareas",
+        "model": "Tareas",
+        "storeId": "Tareas"
+    },
+    "name": "Secuencia1",
+    "designerId": "cc0d4669-b5c6-49ab-8d72-7b3e6b3f2999",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "113893a8-caa3-4b48-a308-b6a111278aef"
+        }
+    ]
+}

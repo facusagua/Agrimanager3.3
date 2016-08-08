@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "actividadeslotesgrid",
+        "designer|userClassName": "establecimientosGridViewModel11"
+    },
+    "name": "establecimientosGridViewModel11",
+    "designerId": "6152a180-c5ad-4c40-a198-e92add6bdafe"
+}

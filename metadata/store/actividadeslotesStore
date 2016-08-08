@@ -1,0 +1,55 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "actividadeslotesStore",
+        "model": "Tareas",
+        "storeId": "actividadeslotesStore"
+    },
+    "name": "tareasStore1",
+    "designerId": "eba61929-b52b-4899-8e4a-22214877d339",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{sql: 'SELECT id,codigo,descripcion as nombre,cod_lote,cod_actividad,cod_periodo,fecha_desde as desde,fecha_hasta as hasta FROM lote_actividad'}"
+                ],
+                "url": "php/listado.php"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "f0bdb4a0-3647-4748-9105-0ac30c9b5c63",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": [
+                            "reqList"
+                        ]
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "33ecfe47-1a75-4b0d-b5ef-dd4202dfdd5a"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "acordionActions"
+    },
+    "name": "MyController",
+    "designerId": "af929332-9fb6-4433-8d5b-17c0f2becc39",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "application"
+                ],
+                "fn": "init",
+                "implHandler": [
+                    "        this.control({",
+                    "                         'panel#nuevoInsumoPnl': {",
+                    "                              beforeexpand: this.onPanelExpand,",
+                    "                              beforecollapse: this.onPanelCollapse",
+                    "                            },",
+                    "                          'panel#nuevoPersonaPnl': {",
+                    "                              beforeexpand: this.onPanelExpand,",
+                    "                              beforecollapse: this.onPanelCollapse",
+                    "                            },",
+                    "                          'panel#nuevoMaqPnl': {",
+                    "                              beforeexpand: this.onPanelExpand,",
+                    "                              beforecollapse: this.onPanelCollapse",
+                    "                            }",
+                    "                        });"
+                ]
+            },
+            "name": "init",
+            "designerId": "369bbea9-0765-440d-8ba0-91891cb62ec2"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "p",
+                    "eOpts"
+                ],
+                "fn": "onPanelExpand",
+                "implHandler": [
+                    "var labTlb = Ext.ComponentQuery.query(\"#laboresFoterTlb\")[0];",
+                    "        console.log(labTlb);",
+                    "        labTlb.hide();"
+                ]
+            },
+            "name": "onPanelExpand",
+            "designerId": "ebae55d3-52da-48fd-9ec4-93eee7371f2c"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "p",
+                    "eOpts"
+                ],
+                "fn": "onPanelCollapse",
+                "implHandler": [
+                    "var labTlb = Ext.ComponentQuery.query(\"#laboresFoterTlb\")[0];",
+                    "                console.log(labTlb);",
+                    "                labTlb.show();"
+                ]
+            },
+            "name": "onPanelCollapse",
+            "designerId": "85fff7f5-b9b8-4130-b686-ed46a0b8bf47"
+        }
+    ]
+}

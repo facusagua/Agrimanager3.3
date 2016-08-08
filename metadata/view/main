@@ -1,0 +1,256 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "controller": null,
+        "designer|initialView": true,
+        "designer|userAlias": "main",
+        "designer|userAliasPrefix": "controller",
+        "designer|userClassName": "main",
+        "flex": 1,
+        "itemId": "main",
+        "layout": "vbox"
+    },
+    "name": "MyViewport1",
+    "designerId": "19d2f9e3-4f83-4a77-894a-3aee5b721f5c",
+    "viewControllerInstanceId": "05da36b9-8241-480c-b25a-2e6481a2d6ed",
+    "viewModelInstanceId": "581e761d-c263-47f9-a5a0-47ebfc227d0c",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "height": 80,
+                "layout|flex": 0,
+                "style": [
+                    "background-color: #424242;",
+                    "border-bottom: 2px;",
+                    "border-bottom-color: #5FB404;",
+                    "border-bottom-style: solid;"
+                ]
+            },
+            "name": "MyToolbar",
+            "designerId": "b866ebdc-b0df-4836-a171-1fffc02b2e1d",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "height": "90%",
+                        "layout": "hbox",
+                        "layout|flex": null,
+                        "width": "50%"
+                    },
+                    "name": "MyContainer1",
+                    "designerId": "6a881b8f-715c-4ac4-8627-e18787b3f15b",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 50,
+                                "src": "img/logohoja.png",
+                                "width": 50
+                            },
+                            "name": "MyImg",
+                            "designerId": "b1fbfa4e-758f-4bfe-adfe-ccea54e9c5b1"
+                        },
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": "40%",
+                                "layout|flex": 1,
+                                "style": [
+                                    "color: #FAFAFA;",
+                                    "font-size: 100%;"
+                                ],
+                                "text": "AGRIMANAGER",
+                                "width": "80%"
+                            },
+                            "name": "MyLabel",
+                            "designerId": "6a1c1957-c58b-4313-8791-1be46ed8e5dc"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "container|pack": "end",
+                        "dock": null,
+                        "height": "70%",
+                        "layout": "hbox",
+                        "layout|flex": null,
+                        "width": "50%"
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "bd0f0717-6ada-495a-bb2d-76caa6b985ce",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "border": 0,
+                                "defaultListenerScope": true,
+                                "glyph": "xf0ee@FontAwesome",
+                                "handler": null,
+                                "id": "sincBtn",
+                                "itemId": "sincBtn",
+                                "layout|flex": 0,
+                                "margin": "0px 10px 0px 10px",
+                                "params": [
+                                    "SincPanel"
+                                ],
+                                "resizeHandles": null,
+                                "scale": "large",
+                                "style": [
+                                    "background-color: #424242;"
+                                ],
+                                "text": "",
+                                "toggleHandler": null,
+                                "width": "30%"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "434323fb-e424-440b-b2c8-3a9dce04dc04"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "border": 0,
+                                "defaultListenerScope": true,
+                                "glyph": "xf013@FontAwesome",
+                                "handler": null,
+                                "id": "configBtn",
+                                "itemId": "configBtn",
+                                "layout|flex": 0,
+                                "margin": "0px 10px 0px 10px",
+                                "params": [
+                                    "configPanel"
+                                ],
+                                "resizeHandles": null,
+                                "scale": "large",
+                                "style": [
+                                    "background-color: #424242;"
+                                ],
+                                "text": "",
+                                "toggleHandler": null,
+                                "width": "30%"
+                            },
+                            "name": "MyButton4",
+                            "designerId": "8fc88ec7-1029-4891-a818-ccfeb19e22af"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "border": 0,
+                                "defaultListenerScope": true,
+                                "glyph": "xf100@FontAwesome",
+                                "handler": null,
+                                "hidden": true,
+                                "id": "returnView",
+                                "itemId": null,
+                                "layout|flex": 0,
+                                "margin": "0px 10px 0px 10px",
+                                "params": [
+                                    "wini: '10';"
+                                ],
+                                "resizeHandles": null,
+                                "scale": "large",
+                                "style": [
+                                    "background-color: #424242;"
+                                ],
+                                "text": "",
+                                "toggleHandler": null,
+                                "width": "30%"
+                            },
+                            "name": "MyButton3",
+                            "designerId": "033066e3-a78d-4db7-8100-012c7df0142a"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": null,
+                "id": "contenedorPrincipal",
+                "itemId": null,
+                "layout": "card",
+                "layout|flex": 1,
+                "padding": "5px",
+                "style": [
+                    "background-color: #D8D8D8;",
+                    "border-color: #FAFAFA;"
+                ]
+            },
+            "name": "MyContainer",
+            "designerId": "853963d8-387d-4d68-ac77-754ea15d3990",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onContenedorPrincipalBeforeRender",
+                        "name": "beforerender",
+                        "scope": "me"
+                    },
+                    "name": "onContenedorPrincipalBeforeRender",
+                    "designerId": "fef1a5f6-1264-4b91-9e34-3b2477d9944b"
+                }
+            ]
+        }
+    ]
+}

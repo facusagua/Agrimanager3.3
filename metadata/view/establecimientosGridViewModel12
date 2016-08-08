@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "sincpanel",
+        "designer|userClassName": "establecimientosGridViewModel12"
+    },
+    "name": "establecimientosGridViewModel12",
+    "designerId": "36b3cf14-5409-47de-a88e-074c2b367109"
+}

@@ -1,0 +1,55 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ContratistasMysql",
+        "model": "Contratistas",
+        "storeId": "ContratistasMysql"
+    },
+    "name": "campaniasStore1",
+    "designerId": "5d3db1ac-7c10-4d02-9273-17e6a7214ee2",
+    "configMeta": {
+        "data": {
+            "mock": true
+        }
+    },
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "extraParams": [
+                    "{sql: 'SELECT id,cod_proveedor as codigo,nombre FROM proveedores where fletero_campo=1 or contratista_campo=1'}"
+                ],
+                "url": "php/listado.php"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "8038df41-6f88-4b51-a06e-7438776a8b46",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": [
+                            "reqList"
+                        ]
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "aa9b91e8-d79a-4c0f-b601-7384ac956ca6"
+                }
+            ]
+        }
+    ]
+}

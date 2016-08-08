@@ -1,0 +1,97 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "personalgrid",
+        "designer|userClassName": "personalGrid",
+        "height": 250,
+        "itemId": "personalGrid",
+        "layout": "border",
+        "width": 400
+    },
+    "name": "actividadesGrid2",
+    "designerId": "fac4b239-1761-4799-aef1-80e3a3e73010",
+    "viewControllerInstanceId": "bc385aa7-f8c9-4051-a286-f052022f0a56",
+    "viewModelInstanceId": "c2e04cb0-e670-4ab6-bbae-26883cf9774d",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "bodyStyle": [
+                    "color: #424242;"
+                ],
+                "dock": "top",
+                "forceFit": true,
+                "glyph": "xf0c0@FontAwesome",
+                "iconAlign": "left",
+                "id": "personalGrid",
+                "itemId": "personalGrid",
+                "layout|region": "center",
+                "layout|split": false,
+                "layout|splitterResize": false,
+                "rtl": false,
+                "split": true,
+                "store": "Personal",
+                "style": [
+                    "padding: 5px 5px 5px 5px;",
+                    "color: #424242;"
+                ],
+                "title": "Personal",
+                "titleAlign": "left"
+            },
+            "name": "MyGridPanel",
+            "designerId": "03ed479f-63f1-4492-abf5-11a8d537f56d",
+            "cn": [
+                {
+                    "type": "Ext.view.Table",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyTable",
+                    "designerId": "2b7d0936-03fc-458f-b199-3eba34d8c03e"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "codigo",
+                        "format": "00",
+                        "text": "Codigo"
+                    },
+                    "name": "MyNumberColumn5",
+                    "designerId": "3ab8df32-d8c5-4022-ac7c-184368482f95"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "nombre",
+                        "text": "Nombre"
+                    },
+                    "name": "MyColumn5",
+                    "designerId": "41f8fea1-b2a3-4303-aa46-d5609223c4b6"
+                }
+            ]
+        }
+    ]
+}

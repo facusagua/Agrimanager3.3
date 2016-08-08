@@ -1,0 +1,29 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "Rubros",
+        "model": "Rubros",
+        "storeId": "Rubros"
+    },
+    "name": "Personal2",
+    "designerId": "184d748a-6c0b-4f7e-bf5b-d431bd0c07cc",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "6870ab49-a759-462f-ae96-53943defeff1"
+        }
+    ]
+}

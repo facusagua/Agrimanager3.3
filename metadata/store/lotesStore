@@ -1,0 +1,38 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "lotesStore",
+        "storeId": "lotesStore"
+    },
+    "name": "MyJsonStore",
+    "designerId": "8c74595b-0683-45e1-a810-d27329720494",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyAjaxProxy1",
+            "designerId": "4ac7e13c-6492-4a3e-b82a-770f1007a14e",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader1",
+                    "designerId": "e44bb1ce-402f-4363-8b63-7d4d57df547c"
+                }
+            ]
+        }
+    ]
+}

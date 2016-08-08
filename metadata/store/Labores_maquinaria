@@ -1,0 +1,29 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "Labores_maquinaria",
+        "model": "Labores_maquinaria",
+        "storeId": "Labores_maquinaria"
+    },
+    "name": "Labores_insumos1",
+    "designerId": "91203178-4202-4908-a844-64b6587f9980",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "7e6a4f15-ead9-4083-a18b-bc3239c97dd3"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "Maquinaria",
+        "model": "Maquinaria",
+        "storeId": "Maquinaria"
+    },
+    "name": "Lotes2",
+    "designerId": "e96201a0-f92d-4b44-a45e-dd201bf1efa3",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "ea8a64c5-e74c-4876-8ee5-2c58757f1c4e"
+        }
+    ]
+}

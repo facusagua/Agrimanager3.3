@@ -1,0 +1,423 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "menuTabla",
+        "designer|userClassName": "menuTabla",
+        "dock": "top",
+        "flex": 1,
+        "height": null,
+        "itemId": "menuTabla",
+        "scrollable": "true",
+        "style": [
+            "background-color: #D8D8D8;",
+            ""
+        ]
+    },
+    "name": "menuPrincipal1",
+    "designerId": "3551f9db-e31f-4c30-966e-9ed9050a9f5c",
+    "viewControllerInstanceId": "b4653fd8-2ed6-4d5c-b109-da3ec38ad0b9",
+    "viewModelInstanceId": "903becd6-ec61-468c-a7a2-d4443db879f2",
+    "cn": [
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf19c@FontAwesome",
+                "height": "25%",
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "id": "establecimientosBtn",
+                "margin": null,
+                "params": [
+                    "establecimientosGrid"
+                ],
+                "scale": "medium",
+                "style": [
+                    "margin: 2% 2% 2% 2%;",
+                    "background-color: #424242;"
+                ],
+                "text": "Establecimientos",
+                "width": "29%"
+            },
+            "name": "MyButton3",
+            "designerId": "ab5a4055-a899-4631-aa3b-5bca80358f7d"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf200@FontAwesome",
+                "height": "25%",
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "id": "lotesBtn",
+                "margin": null,
+                "params": [
+                    "lotesGrid"
+                ],
+                "scale": "medium",
+                "style": [
+                    "margin: 2% 2% 2% 2%;",
+                    "background-color: #424242;"
+                ],
+                "text": "Lotes",
+                "width": "29%"
+            },
+            "name": "MyButton11",
+            "designerId": "cfd55e2d-18a3-4f9a-8669-2a8b25531e8d"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf06c@FontAwesome",
+                "height": "25%",
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "id": "actividadesBtn",
+                "margin": null,
+                "params": [
+                    "actividadesGrid"
+                ],
+                "scale": "medium",
+                "style": [
+                    "margin: 2% 2% 2% 2%;",
+                    "background-color: #424242;"
+                ],
+                "text": "Actividades",
+                "width": "29%"
+            },
+            "name": "MyButton12",
+            "designerId": "db07a6d6-082e-4198-ba10-0e79e84050e4"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf073@FontAwesome",
+                "height": "25%",
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "id": "campaniasBtn",
+                "margin": null,
+                "params": [
+                    "campaniasGrid"
+                ],
+                "scale": "medium",
+                "style": [
+                    "margin: 2% 2% 2% 2%;",
+                    "background-color: #424242;"
+                ],
+                "text": "Campañas",
+                "width": "29%"
+            },
+            "name": "MyButton22",
+            "designerId": "a3e55e3e-a5e5-4620-9bd2-264ea3f823ad"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf0ae@FontAwesome",
+                "height": "25%",
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "id": "tareasBtn",
+                "margin": null,
+                "params": [
+                    "tareasGrid"
+                ],
+                "scale": "medium",
+                "style": [
+                    "margin: 2% 2% 2% 2%;",
+                    "background-color: #424242;"
+                ],
+                "text": "Tareas",
+                "width": "29%"
+            },
+            "name": "MyButton13",
+            "designerId": "fdf07439-47d0-4656-83e8-11ecff27177e"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf0c0@FontAwesome",
+                "height": "25%",
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "id": "personalBtn",
+                "margin": null,
+                "params": [
+                    "personalGrid"
+                ],
+                "scale": "medium",
+                "style": [
+                    "margin: 2% 2% 2% 2%;",
+                    "background-color: #424242;"
+                ],
+                "text": "Personal",
+                "width": "29%"
+            },
+            "name": "MyButton25",
+            "designerId": "8d52d175-2935-4072-9c1d-a7c518c88f49"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf198@FontAwesome",
+                "height": "25%",
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "id": "rubroinsumosBtn",
+                "margin": null,
+                "params": [
+                    "rubroinsumosGrid"
+                ],
+                "scale": "medium",
+                "style": [
+                    "margin: 2% 2% 2% 2%;",
+                    "background-color: #424242;"
+                ],
+                "text": "Rubro Insumos",
+                "width": "29%"
+            },
+            "name": "MyButton10",
+            "designerId": "7d8bf6f0-c888-436b-a37c-29ecd960c9f4"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf043@FontAwesome",
+                "height": "25%",
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "id": "insumosBtn",
+                "margin": null,
+                "params": [
+                    "insumosGrid"
+                ],
+                "scale": "medium",
+                "style": [
+                    "margin: 2% 2% 2% 2%;",
+                    "background-color: #424242;"
+                ],
+                "text": "Insumos",
+                "width": "29%"
+            },
+            "name": "MyButton26",
+            "designerId": "c3ce326a-3191-428a-b52e-de3d56734bd3"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf085@FontAwesome",
+                "height": "25%",
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "id": "maquinariasBtn",
+                "margin": null,
+                "params": [
+                    "maquinariasGrid"
+                ],
+                "scale": "medium",
+                "style": [
+                    "margin: 2% 2% 2% 2%;",
+                    "background-color: #424242;"
+                ],
+                "text": "Maquinaria",
+                "width": "29%"
+            },
+            "name": "MyButton27",
+            "designerId": "80d302a9-4095-469d-b90b-b34e6ae03785"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf0ad@FontAwesome",
+                "height": "25%",
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "itemId": "contratistasBtn",
+                "margin": null,
+                "params": [
+                    "contratistasGrid"
+                ],
+                "scale": "medium",
+                "style": [
+                    "margin: 2% 2% 2% 2%;",
+                    "background-color: #424242;"
+                ],
+                "text": "Contratistas",
+                "width": "29%"
+            },
+            "name": "MyButton28",
+            "designerId": "e9c0f463-f32d-4bfe-bb3a-0e258879313b"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf18c@FontAwesome",
+                "height": "25%",
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "id": "depositosBtn",
+                "margin": null,
+                "params": [
+                    "depositosGrid"
+                ],
+                "scale": "medium",
+                "style": [
+                    "margin: 2% 2% 2% 2%;",
+                    "background-color: #424242;"
+                ],
+                "text": "Deposito",
+                "width": "29%"
+            },
+            "name": "MyButton29",
+            "designerId": "1af423f3-8bea-4226-ba49-a806d846fbba"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDepress": false,
+                "arrowVisible": false,
+                "border": null,
+                "flex": 0,
+                "glyph": "xf196@FontAwesome",
+                "height": "25%",
+                "icon": "",
+                "iconAlign": "top",
+                "iconCls": "",
+                "id": "actividadeslotesBtn",
+                "margin": null,
+                "params": [
+                    "actividadeslotesGrid"
+                ],
+                "scale": "medium",
+                "style": [
+                    "margin: 2% 2% 2% 2%;",
+                    "background-color: #424242;"
+                ],
+                "text": "Actividad Lotes",
+                "width": "29%"
+            },
+            "name": "MyButton",
+            "designerId": "f035d492-8a0c-4d50-90ba-bc7fe933fdce"
+        }
+    ]
+}

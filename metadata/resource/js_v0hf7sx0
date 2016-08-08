@@ -1,0 +1,16 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "defer": false,
+        "designer|userClassName": "js_v0hf7sx0",
+        "url": "LibJS/sinc_lib.js",
+        "x-compile": true
+    },
+    "name": "js",
+    "designerId": "373806be-0c8f-42f1-a8c8-d82838ceaf8f"
+}

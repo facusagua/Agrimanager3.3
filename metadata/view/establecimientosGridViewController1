@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "actividadesgrid",
+        "designer|userClassName": "establecimientosGridViewController1"
+    },
+    "name": "establecimientosGridViewController1",
+    "designerId": "8f4e9c8a-d4d3-4e12-a26f-737accd7c053"
+}

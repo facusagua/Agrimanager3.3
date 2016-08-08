@@ -1,0 +1,30 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "asynchronousLoad": true,
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userClassName": "Actividades",
+        "model": "Actividades",
+        "storeId": "Actividades"
+    },
+    "name": "MyStore",
+    "designerId": "f739083f-20f2-4bf3-8e64-fff80123a7ed",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyLocalStorageProxy",
+            "designerId": "f780a1d4-13f4-4845-907c-2e6be794f7e6"
+        }
+    ]
+}

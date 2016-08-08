@@ -1,0 +1,16 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "defer": false,
+        "designer|userClassName": "js_1q05rm2j",
+        "url": "../LibJS/gmaplib.js",
+        "x-compile": true
+    },
+    "name": "js",
+    "designerId": "ee5034c8-2ab3-4669-8380-6e5937be97c4"
+}
